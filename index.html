@@ -17,18 +17,19 @@
     
     <!-- Open Graph (Khusus Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:type" content="website">
-    <!-- WAJIB GANTI: Masukkan link domain asli Anda di sini (misal: https://webanda.com/) -->
-    <meta property="og:url" content="https://hanifansyafiin.com/">
+    <!-- URL web asli Anda di GitHub Pages -->
+    <meta property="og:url" content="https://garinkindi.github.io/Hanifan/">
     <meta property="og:title" content="Hanifan N. Syafi'in | B2B Procurement Expert">
     <meta property="og:description" content="Hadirkan standar fasilitas premium untuk ekosistem bisnis dan edukasi Anda. Konsultasi pengadaan gratis!">
-    <!-- WAJIB GANTI: Link gambar ini HARUS diawali dengan https:// (URL Absolut) agar terbaca oleh WhatsApp -->
-    <meta property="og:image" content="https://hanifansyafiin.com/profil.jpg"> 
+    <!-- URL Absolut Foto Profil Anda di GitHub Pages -->
+    <meta property="og:image" content="https://garinkindi.github.io/Hanifan/profil.jpg"> 
 
     <!-- Twitter Card (Khusus Twitter/X) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hanifan N. Syafi'in | B2B Procurement Expert">
     <meta name="twitter:description" content="Partner strategis pengadaan fasilitas B2B premium untuk ekosistem bisnis dan edukasi Anda.">
-    <meta name="twitter:image" content="https://hanifansyafiin.com/profil.jpg">
+    <!-- URL Absolut Foto Profil Anda di GitHub Pages -->
+    <meta name="twitter:image" content="https://garinkindi.github.io/Hanifan/profil.jpg">
 
     <!-- ========================================================================= -->
     <!-- TUTORIAL: 2. ANALITIK (MELACAK PENGUNJUNG)                                -->
@@ -105,6 +106,19 @@
                 linear-gradient(to right, rgba(212, 175, 55, 0.03) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
         }
+
+        /* Custom Scrollbar for Modals */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.5); 
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #D4AF37; 
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-[#D4AF37] selection:text-[#0B1120] pb-20 relative bg-industrial-grid">
@@ -155,11 +169,13 @@
                 HN<span class="text-[#D4AF37]">S</span>
             </a>
             <!-- Menu Teks (Hanya terlihat di Laptop/Desktop) -->
-            <div class="hidden md:flex items-center gap-8 font-medium tracking-wide">
+            <div class="hidden md:flex items-center gap-4 lg:gap-8 font-medium tracking-wide">
                 <a href="#beranda" class="nav-item text-[#D4AF37] hover:text-[#D4AF37] transition-colors">Beranda</a>
-                <a href="#fokus" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">Fokus Kerja</a>
+                <a href="#fokus" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">Fokus</a>
                 <a href="#portofolio" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">Portofolio</a>
                 <a href="#testimoni" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">Klien</a>
+                <a href="#faq" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">FAQ</a>
+                <a href="#kontak" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">Kontak</a>
             </div>
             <!-- ID Karyawan & Tombol Menu HP -->
             <div class="flex items-center gap-4">
@@ -177,9 +193,11 @@
         <!-- Menu Dropdown (Khusus Tampilan HP) -->
         <div id="mobile-menu" class="hidden md:hidden glass-panel mt-2 rounded-2xl border border-white/10 overflow-hidden flex-col max-w-6xl mx-auto shadow-2xl">
             <a href="#beranda" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-[#D4AF37] font-medium tracking-wide">Beranda</a>
-            <a href="#fokus" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-gray-300 font-medium tracking-wide">Fokus Kerja</a>
-            <a href="#portofolio" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-gray-300 font-medium tracking-wide">Portofolio</a>
-            <a href="#testimoni" class="mobile-nav-item px-6 py-4 text-center text-gray-300 font-medium tracking-wide">Klien & Testimoni</a>
+            <a href="#fokus" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-gray-300 hover:text-[#D4AF37] font-medium tracking-wide">Fokus Kerja</a>
+            <a href="#portofolio" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-gray-300 hover:text-[#D4AF37] font-medium tracking-wide">Portofolio</a>
+            <a href="#testimoni" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-gray-300 hover:text-[#D4AF37] font-medium tracking-wide">Klien & Testimoni</a>
+            <a href="#faq" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-gray-300 hover:text-[#D4AF37] font-medium tracking-wide">FAQ</a>
+            <a href="#kontak" class="mobile-nav-item px-6 py-4 text-center text-gray-300 hover:text-[#D4AF37] font-medium tracking-wide">Kontak</a>
         </div>
     </nav>
 
@@ -220,8 +238,8 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row items-center gap-5 justify-center lg:justify-start mb-10">
-                        <!-- GANTI NOMOR WA: Ubah "628XXXXXXXXXX" dengan nomor Anda. -->
-                        <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20Pak%20Hanifan,%20saya%20ingin%20konsultasi%20mengenai%20kebutuhan%20pengadaan%20fasilitas%20instansi%20saya." target="_blank" onclick="trackWhatsAppClick('Hero Section')" class="hover-shine relative w-full sm:w-auto bg-glossy-gold text-[#0B1120] px-8 py-5 rounded-full font-bold shadow-[0_20px_40px_rgba(212,175,55,0.15)] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex items-center justify-center gap-3">
+                        <!-- Nomor WA telah diatur ke +62 815-4207-0269 -->
+                        <a href="https://wa.me/6281542070269?text=Halo%20Bapak%20Hanifan%2C%20saya%20%5BNama%20Anda%5D%20dari%20%5BNama%20Instansi%2FPerusahaan%5D.%20Saya%20ingin%20menjadwalkan%20Clarity%20Session%2015%20Menit%20untuk%20berdiskusi%20mengenai%20kebutuhan%20pengadaan%20fasilitas%20kami.%20Mohon%20informasi%20mengenai%20ketersediaan%20waktunya.%20Terima%20kasih." target="_blank" onclick="trackWhatsAppClick('Hero Section')" class="hover-shine relative w-full sm:w-auto bg-glossy-gold text-[#0B1120] px-8 py-5 rounded-full font-bold shadow-[0_20px_40px_rgba(212,175,55,0.15)] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex items-center justify-center gap-3">
                             <span class="shine-effect absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-15deg]"></span>
                             <i class="fa-brands fa-whatsapp text-xl"></i> 
                             <span class="tracking-wide uppercase text-sm">Konsultasi via WA</span>
@@ -472,7 +490,50 @@
         </section>
 
         <!-- ========================================================================= -->
-        <!-- TUTORIAL: 11. CALL TO ACTION (DORONGAN AKHIR UNTUK CHAT)                  -->
+        <!-- TUTORIAL: 11. PERTANYAAN UMUM (FAQ)                                       -->
+        <!-- Ide: Menjawab keraguan klien secara langsung sebelum mereka bertanya.     -->
+        <!-- ========================================================================= -->
+        <section id="faq" class="py-20 relative z-10 scroll-mt-24 border-t border-slate-800">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Pertanyaan Umum</h3>
+                <div class="w-20 h-1 bg-glossy-gold mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-400 text-sm md:text-base font-light max-w-2xl mx-auto">Informasi seputar layanan, pengiriman, dan proses konsultasi pengadaan fasilitas.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-slate-800/40 p-6 md:p-8 rounded-3xl border border-slate-700 hover:border-[#D4AF37]/50 transition-colors shadow-lg">
+                    <p class="text-[#D4AF37] font-bold mb-3 flex items-start gap-3">
+                        <i class="fa-solid fa-circle-question mt-1 text-lg"></i>
+                        Apakah bisa konsultasi tanpa membeli?
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed pl-8">Ya, saya membuka <strong>Clarity Session 15 menit GRATIS</strong> tanpa kewajiban pembelian apapun. Tujuan saya murni membantu memetakan kebutuhan Anda terlebih dahulu.</p>
+                </div>
+                <div class="bg-slate-800/40 p-6 md:p-8 rounded-3xl border border-slate-700 hover:border-[#D4AF37]/50 transition-colors shadow-lg">
+                    <p class="text-[#D4AF37] font-bold mb-3 flex items-start gap-3">
+                        <i class="fa-solid fa-circle-question mt-1 text-lg"></i>
+                        Apakah melayani pengiriman ke luar Jawa?
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed pl-8">Ya, kami memiliki jaringan distribusi solid ke 100+ kab/kota di seluruh Indonesia. Cek selengkapnya di <a href="https://atsonline.shop/#" target="_blank" class="text-white hover:text-[#D4AF37] underline">atsonline.shop</a>.</p>
+                </div>
+                <div class="bg-slate-800/40 p-6 md:p-8 rounded-3xl border border-slate-700 hover:border-[#D4AF37]/50 transition-colors shadow-lg">
+                    <p class="text-[#D4AF37] font-bold mb-3 flex items-start gap-3">
+                        <i class="fa-solid fa-circle-question mt-1 text-lg"></i>
+                        Apakah menyediakan e-Katalog / SIPLah?
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed pl-8">Tentu. Kami adalah mitra resmi yang terdaftar sebagai penyedia pengadaan pemerintah melalui sistem SIPLah dan e-Katalog nasional.</p>
+                </div>
+                <div class="bg-slate-800/40 p-6 md:p-8 rounded-3xl border border-slate-700 hover:border-[#D4AF37]/50 transition-colors shadow-lg">
+                    <p class="text-[#D4AF37] font-bold mb-3 flex items-start gap-3">
+                        <i class="fa-solid fa-circle-question mt-1 text-lg"></i>
+                        Berapa lama proses pengiriman?
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed pl-8">Durasi pengiriman bergantung pada lokasi dan ketersediaan stok. Rata-rata memakan waktu 3-14 hari kerja setelah pesanan dikonfirmasi dan diproses.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TUTORIAL: 12. CALL TO ACTION (DORONGAN AKHIR UNTUK CHAT)                  -->
         <!-- Ide: Bagian besar berwarna hitam legam untuk memancing klien klik WA.     -->
         <!-- ========================================================================= -->
         <section id="kontak" class="py-20 relative z-10 scroll-mt-24">
@@ -488,8 +549,8 @@
                     </p>
                     
                     <div class="flex justify-center">
-                        <!-- GANTI NOMOR WA LAGI DI SINI -->
-                        <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20Pak%20Hanifan,%20saya%20tertarik%20untuk%20menjadwalkan%20Clarity%20Session%2015%20Menit%20terkait%20pengadaan%20fasilitas." target="_blank" onclick="trackWhatsAppClick('Footer CTA')" class="hover-shine relative overflow-hidden bg-glossy-gold text-[#0B1120] px-10 py-5 rounded-full font-bold shadow-[0_10px_30px_rgba(212,175,55,0.15)] transition transform hover:-translate-y-1 flex items-center gap-3">
+                        <!-- Nomor WA telah diatur ke +62 815-4207-0269 -->
+                        <a href="https://wa.me/6281542070269?text=Halo%20Bapak%20Hanifan%2C%20saya%20%5BNama%20Anda%5D%20dari%20%5BNama%20Instansi%2FPerusahaan%5D.%20Saya%20ingin%20menjadwalkan%20Clarity%20Session%2015%20Menit%20untuk%20berdiskusi%20mengenai%20kebutuhan%20pengadaan%20fasilitas%20kami.%20Mohon%20informasi%20mengenai%20ketersediaan%20waktunya.%20Terima%20kasih." target="_blank" onclick="trackWhatsAppClick('Footer CTA')" class="hover-shine relative overflow-hidden bg-glossy-gold text-[#0B1120] px-10 py-5 rounded-full font-bold shadow-[0_10px_30px_rgba(212,175,55,0.15)] transition transform hover:-translate-y-1 flex items-center gap-3">
                             <span class="shine-effect absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-[-15deg]"></span>
                             <i class="fa-brands fa-whatsapp text-xl"></i> <span class="relative z-10 tracking-wide uppercase text-sm">Chat WhatsApp Sekarang</span>
                         </a>
@@ -499,54 +560,75 @@
         </section>
 
         <!-- ========================================================================= -->
-        <!-- TUTORIAL: 12. FOOTER (INFORMASI KONTAK & LEGAL)                           -->
-        <!-- Ide: Alamat kantor, nomor telepon, dan tautan kebijakan privasi.          -->
+        <!-- TUTORIAL: 13. FOOTER (INFORMASI KONTAK, MAPS, & LEGAL)                    -->
+        <!-- Ide: Menambahkan Google Maps Interaktif dan Modal untuk Legalitas.        -->
         <!-- ========================================================================= -->
         <footer class="pt-10 pb-4 relative z-10">
-            <div class="bg-[#111827] rounded-[2.5rem] p-10 md:p-14 shadow-2xl border border-slate-800">
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-10 border-b border-slate-800 pb-10 mb-10">
-                    <div class="text-center lg:text-left">
-                        <h4 class="font-serif font-bold text-white text-2xl mb-1">PT Apsara Tiyasa Sambada</h4>
-                        <p class="text-[#D4AF37] font-bold text-[10px] tracking-[0.2em] uppercase">Official B2B Distributor</p>
-                    </div>
-                    <!-- Link Katalog Bawah -->
-                    <a href="https://atsonline.shop/#" target="_blank" class="group bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-[#D4AF37] px-8 py-4 rounded-full flex items-center gap-4 transition-all duration-300 shadow-lg">
-                        <div class="text-right">
-                            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Jangkauan Kami</p>
-                            <p class="text-sm text-gray-200 font-bold">Katalog Resmi 2026</p>
-                        </div>
-                        <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-[#D4AF37] group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </div>
-                    </a>
-                </div>
+            <div class="bg-[#111827] rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-slate-800">
                 
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400 text-sm font-light">
-                    <!-- Edit Alamat di sini -->
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-location-dot text-[#D4AF37]"></i>
-                        <p>Jl. Klaten - Solo Km 7, Dlimas, Ceper, Klaten 57465</p>
+                <!-- Grid Footer Utama (Dibagi menjadi 3 kolom agar rapi) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 border-b border-slate-800 pb-10 mb-8">
+                    
+                    <!-- Kolom 1: Profil Perusahaan -->
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                        <h4 class="font-serif font-bold text-white text-2xl mb-1">PT Apsara Tiyasa Sambada</h4>
+                        <p class="text-[#D4AF37] font-bold text-[10px] tracking-[0.2em] uppercase mb-6">Official B2B Distributor</p>
+                        <!-- Link Katalog Bawah -->
+                        <a href="https://atsonline.shop/#" target="_blank" class="group w-full sm:w-auto bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-[#D4AF37] px-6 py-3 rounded-full flex justify-between sm:justify-start items-center gap-4 transition-all duration-300 shadow-lg">
+                            <div class="text-right sm:text-left">
+                                <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Jangkauan Kami</p>
+                                <p class="text-sm text-gray-200 font-bold">Katalog Resmi 2026</p>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-[#D4AF37] group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                        </a>
                     </div>
-                    <div class="flex gap-8">
-                        <!-- Edit Telp & Fax di sini -->
-                        <div class="flex items-center gap-2 hover:text-[#D4AF37] transition">
-                            <i class="fa-solid fa-phone text-[#D4AF37]"></i>
-                            <span>(0272) 322 446</span>
-                        </div>
-                        <div class="flex items-center gap-2 hover:text-[#D4AF37] transition">
-                            <i class="fa-solid fa-fax text-[#D4AF37]"></i>
-                            <span>(0272) 323 626</span>
+                    
+                    <!-- Kolom 2: Kontak & Alamat -->
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left text-gray-400 text-sm font-light">
+                        <h4 class="text-white font-bold mb-5 tracking-widest uppercase text-xs">Hubungi Kami</h4>
+                        <div class="space-y-4">
+                            <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-[#D4AF37] mt-1"></i>
+                                <p>Jl. Klaten - Solo Km 7, Dlimas,<br>Ceper, Klaten 57465</p>
+                            </div>
+                            <div class="flex justify-center md:justify-start items-center gap-3 hover:text-[#D4AF37] transition cursor-pointer">
+                                <i class="fa-solid fa-phone text-[#D4AF37]"></i>
+                                <span>(0272) 322 446</span>
+                            </div>
+                            <div class="flex justify-center md:justify-start items-center gap-3 hover:text-[#D4AF37] transition cursor-pointer">
+                                <i class="fa-solid fa-fax text-[#D4AF37]"></i>
+                                <span>(0272) 323 626</span>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Kolom 3: Google Maps Interaktif -->
+                    <div class="w-full flex flex-col items-center md:items-start">
+                        <h4 class="text-white font-bold mb-5 tracking-widest uppercase text-xs">Lokasi Kantor</h4>
+                        <!-- Wadah Iframe Map -->
+                        <div class="w-full h-32 rounded-xl overflow-hidden border border-slate-700 mb-4 group relative">
+                            <!-- Overlay tipis agar map terlihat elegan, akan hilang saat di hover -->
+                            <div class="absolute inset-0 bg-[#0B1120]/30 pointer-events-none group-hover:opacity-0 transition-opacity duration-300"></div>
+                            <iframe src="https://maps.google.com/maps?q=PT%20Apsara%20Tiyasa%20Sambada%20Klaten&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale group-hover:grayscale-0 transition-all duration-500"></iframe>
+                        </div>
+                        <!-- Tombol Petunjuk Arah -->
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=-7.6993417,110.6659798" target="_blank" class="inline-flex items-center justify-center w-full gap-2 bg-slate-800 hover:bg-[#D4AF37] border border-slate-700 hover:border-[#D4AF37] text-gray-300 hover:text-[#0B1120] px-4 py-2.5 rounded-full text-xs font-bold transition-all duration-300">
+                            <i class="fa-solid fa-location-arrow"></i> Buka Petunjuk Arah
+                        </a>
+                    </div>
+
                 </div>
             </div>
             
+            <!-- Legal Links & Copyright (Menggunakan fungsi onClick untuk memanggil Popup/Modal) -->
             <div class="mt-8 flex flex-col md:flex-row justify-between items-center px-4 md:px-10 gap-4">
                 <p class="text-center md:text-left text-[10px] text-gray-500 font-medium tracking-widest uppercase">&copy; 2026 Hanifan N. Syafi'in. All rights reserved.</p>
                 <div class="flex gap-6 text-[11px] text-gray-500 font-medium">
-                    <!-- Tautan ini bisa diisi dengan link dokumen PDF / halaman legal Anda nantinya -->
-                    <a href="#" class="hover:text-[#D4AF37] transition-colors">Syarat & Ketentuan</a>
-                    <a href="#" class="hover:text-[#D4AF37] transition-colors">Kebijakan Privasi</a>
+                    <!-- Klik akan memanggil JavaScript fungsi openModal -->
+                    <button onclick="openModal('modal-tnc')" class="hover:text-[#D4AF37] transition-colors focus:outline-none">Syarat & Ketentuan</button>
+                    <button onclick="openModal('modal-privacy')" class="hover:text-[#D4AF37] transition-colors focus:outline-none">Kebijakan Privasi</button>
                 </div>
             </div>
         </footer>
@@ -554,11 +636,64 @@
     </main>
 
     <!-- ========================================================================= -->
-    <!-- TUTORIAL: 13. JAVASCRIPT (LOGIKA INTERAKTIF)                              -->
-    <!-- Ide: Menjalankan menu HP, Scrollspy, dan pelacak klik analitik WA.        -->
+    <!-- TUTORIAL: 14. POPUP MODAL (UNTUK SYARAT KETENTUAN & PRIVASI)              -->
+    <!-- Ide: Muncul melayang saat tombol di footer diklik.                        -->
+    <!-- ========================================================================= -->
+    
+    <!-- Modal Syarat & Ketentuan -->
+    <div id="modal-tnc" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <!-- Background Blur/Gelap -->
+        <div class="absolute inset-0 bg-[#0B1120]/80 backdrop-blur-sm" onclick="closeModal('modal-tnc')"></div>
+        <!-- Kotak Konten -->
+        <div class="relative bg-[#111827] border border-[#D4AF37]/40 rounded-[2rem] p-8 md:p-10 max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl custom-scrollbar transform scale-95 transition-transform duration-300 modal-content">
+            <!-- Tombol Silang -->
+            <button onclick="closeModal('modal-tnc')" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-gray-400 hover:text-white hover:bg-slate-700 transition focus:outline-none">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            
+            <h3 class="text-2xl font-serif font-bold text-white mb-2">Syarat & Ketentuan</h3>
+            <div class="w-12 h-1 bg-[#D4AF37] rounded-full mb-6"></div>
+            
+            <div class="text-gray-400 text-sm space-y-4 font-light leading-relaxed">
+                <p>Selamat datang di platform konsultasi B2B Hanifan N. Syafi'in (PT Apsara Tiyasa Sambada). Dengan mengakses situs ini, Anda menyetujui syarat dan ketentuan berikut:</p>
+                <p>1. <strong>Layanan Konsultasi:</strong> Sesi konsultasi awal (Clarity Session) yang ditawarkan melalui WhatsApp bersifat sepenuhnya gratis dan tidak mengikat. Klien tidak diwajibkan melakukan pembelian setelah sesi berakhir.</p>
+                <p>2. <strong>Proses Pengadaan:</strong> Transaksi resmi pengadaan fasilitas dan mebelair akan dilakukan sesuai dengan prosedur hukum dan administrasi yang berlaku, baik melalui sistem e-Katalog, SIPLah, maupun *Purchase Order* (PO) B2B langsung ke PT Apsara Tiyasa Sambada.</p>
+                <p>3. <strong>Hak Kekayaan Intelektual:</strong> Seluruh katalog, brosur, spesifikasi produk, dan materi merek (Grafie, RIONE) yang dibagikan adalah hak cipta resmi dari prinsipal dan perusahaan. Tidak diperkenankan untuk disalin tanpa izin resmi.</p>
+                <p>4. <strong>Estimasi & Ketersediaan:</strong> Estimasi harga dan waktu pengiriman yang dibahas dalam konsultasi adalah perkiraan awal. Angka final akan ditetapkan dalam surat penawaran harga (Quotation) resmi.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Kebijakan Privasi -->
+    <div id="modal-privacy" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <!-- Background Blur/Gelap -->
+        <div class="absolute inset-0 bg-[#0B1120]/80 backdrop-blur-sm" onclick="closeModal('modal-privacy')"></div>
+        <!-- Kotak Konten -->
+        <div class="relative bg-[#111827] border border-[#D4AF37]/40 rounded-[2rem] p-8 md:p-10 max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl custom-scrollbar transform scale-95 transition-transform duration-300 modal-content">
+            <!-- Tombol Silang -->
+            <button onclick="closeModal('modal-privacy')" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-gray-400 hover:text-white hover:bg-slate-700 transition focus:outline-none">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            
+            <h3 class="text-2xl font-serif font-bold text-white mb-2">Kebijakan Privasi</h3>
+            <div class="w-12 h-1 bg-[#D4AF37] rounded-full mb-6"></div>
+            
+            <div class="text-gray-400 text-sm space-y-4 font-light leading-relaxed">
+                <p>Privasi dan keamanan data instansi Anda adalah prioritas utama kami. Berikut adalah kebijakan pengelolaan data kami:</p>
+                <p>1. <strong>Pengumpulan Data:</strong> Informasi yang Anda berikan melalui WhatsApp (seperti nama, jabatan, nama instansi, dan kebutuhan pengadaan) hanya dikumpulkan untuk keperluan evaluasi dan komunikasi bisnis terkait pengadaan.</p>
+                <p>2. <strong>Kerahasiaan Proyek:</strong> Setiap Rencana Anggaran Biaya (RAB), *blue-print* tata ruang, dan dokumen internal instansi Anda yang dibagikan selama masa konsultasi dijaga kerahasiaannya dan tidak akan disebarluaskan ke pihak ketiga mana pun tanpa izin tertulis.</p>
+                <p>3. <strong>Analitik Web:</strong> Website ini menggunakan alat pelacakan standar (seperti Google Analytics/Meta Pixel) untuk merekam statistik lalu lintas anonim guna meningkatkan kualitas layanan digital kami. Data ini tidak menyimpan informasi identitas pribadi secara spesifik.</p>
+                <p>4. <strong>Tidak Ada Spam:</strong> Kami menjamin bahwa nomor telepon atau email Anda tidak akan digunakan untuk *spamming* atau dijual ke agensi pemasaran lain. Komunikasi yang dilakukan murni bersifat profesional dan terkait dengan proyek yang sedang berjalan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TUTORIAL: 15. JAVASCRIPT (LOGIKA INTERAKTIF)                              -->
+    <!-- Ide: Menjalankan menu HP, Scrollspy, pelacak analitik, dan POPUP MODAL.   -->
     <!-- ========================================================================= -->
     <script>
-        // FUNGSI 1: Membuka dan menutup Menu di HP (Mobile Menu Toggle)
+        // FUNGSI 1: Membuka dan menutup Menu di HP
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-nav-item');
@@ -575,7 +710,7 @@
             });
         });
 
-        // FUNGSI 2: Scrollspy (Mengubah warna Menu Atas menjadi emas saat di-scroll ke bagiannya)
+        // FUNGSI 2: Scrollspy (Mengubah warna Menu Atas menjadi emas saat di-scroll)
         const sections = document.querySelectorAll('section[id]');
         const navItems = document.querySelectorAll('.nav-item');
         const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
@@ -585,21 +720,19 @@
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 if (pageYOffset >= (sectionTop - 300)) {
-                    current = section.getAttribute('id'); // Mendeteksi section mana yang sedang dilihat
+                    current = section.getAttribute('id');
                 }
             });
 
-            // Mengubah warna menu di desktop
             navItems.forEach(item => {
                 item.classList.remove('text-[#D4AF37]');
                 item.classList.add('text-gray-300');
                 if (item.getAttribute('href').substring(1) === current) {
                     item.classList.remove('text-gray-300');
-                    item.classList.add('text-[#D4AF37]'); // Beri warna emas
+                    item.classList.add('text-[#D4AF37]'); 
                 }
             });
 
-            // Mengubah warna menu di HP
             mobileNavItems.forEach(item => {
                 item.classList.remove('text-[#D4AF37]');
                 item.classList.add('text-gray-300');
@@ -610,7 +743,7 @@
             });
         });
 
-        // FUNGSI 3: Mengirim data ke Google Analytics jika tombol WA diklik
+        // FUNGSI 3: Track WhatsApp
         function trackWhatsAppClick(location) {
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'click', {
@@ -619,11 +752,48 @@
                     'value': 1
                 });
             }
-            // Mengirim data ke Facebook/Meta Pixel jika dipasang
             if (typeof fbq !== 'undefined') {
                 fbq('trackCustom', 'WhatsAppClick', { location: location });
             }
-            console.log('Event Tracked: WhatsApp Clicked from ' + location);
+        }
+
+        // FUNGSI 4: Membuka dan Menutup Popup (Modal) Legalitas
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const content = modal.querySelector('.modal-content');
+            
+            // Hapus class hidden agar modal muncul di DOM
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Sedikit penundaan agar transisi CSS (opacity & scale) berjalan mulus
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                content.classList.remove('scale-95');
+                content.classList.add('scale-100');
+            }, 10);
+
+            // Mencegah body di-scroll saat modal terbuka
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const content = modal.querySelector('.modal-content');
+            
+            // Kembalikan efek transisi (fade out & scale down)
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0');
+            content.classList.remove('scale-100');
+            content.classList.add('scale-95');
+            
+            // Tunggu animasi selesai baru disembunyikan dari DOM
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto'; // Kembalikan scroll body
+            }, 300);
         }
     </script>
 </body>
