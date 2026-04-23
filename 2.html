@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ========================================================================= -->
+    <!-- TUTORIAL: 1. PENGATURAN SEO & SOSIAL MEDIA (META TAGS)                    -->
+    <!-- Ide: Bagian ini tidak terlihat di layar web, tapi sangat penting agar     -->
+    <!-- saat link web dibagikan ke WA/LinkedIn, muncul gambar dan judul yang rapi.-->
+    <!-- ========================================================================= -->
+    <title>Hanifan N. Syafi'in | B2B Procurement Expert</title>
+    <!-- Ganti content di bawah dengan ringkasan web Anda -->
+    <meta name="description" content="Partner strategis pengadaan fasilitas B2B premium untuk ekosistem bisnis dan edukasi Anda. Solusi distribusi nasional dengan brand unggulan: Grafie & RIONE.">
+    <meta name="keywords" content="pengadaan B2B, fasilitas kantor, RIONE, Grafie, distributor atk, pengadaan fasilitas edukasi, Hanifan N Syafi'in, PT Apsara Tiyasa Sambada">
+    <meta name="author" content="Hanifan N. Syafi'in">
+    
+    <!-- Open Graph (Khusus Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <!-- WAJIB GANTI: Masukkan link domain asli Anda di sini (misal: https://webanda.com/) -->
+    <meta property="og:url" content="https://hanifansyafiin.com/">
+    <meta property="og:title" content="Hanifan N. Syafi'in | B2B Procurement Expert">
+    <meta property="og:description" content="Hadirkan standar fasilitas premium untuk ekosistem bisnis dan edukasi Anda. Konsultasi pengadaan gratis!">
+    <!-- WAJIB GANTI: Link gambar ini HARUS diawali dengan https:// (URL Absolut) agar terbaca oleh WhatsApp -->
+    <meta property="og:image" content="https://hanifansyafiin.com/profil.jpg"> 
+
+    <!-- Twitter Card (Khusus Twitter/X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hanifan N. Syafi'in | B2B Procurement Expert">
+    <meta name="twitter:description" content="Partner strategis pengadaan fasilitas B2B premium untuk ekosistem bisnis dan edukasi Anda.">
+    <meta name="twitter:image" content="https://hanifansyafiin.com/profil.jpg">
+
+    <!-- ========================================================================= -->
+    <!-- TUTORIAL: 2. ANALITIK (MELACAK PENGUNJUNG)                                -->
+    <!-- Ide: Mengetahui berapa orang yang buka web ini dan klik tombol WA.        -->
+    <!-- ========================================================================= -->
+    <!-- Ganti 'G-XXXXXXX' dengan kode dari Google Analytics Anda nanti -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX');
+    </script>
+
+    <!-- ========================================================================= -->
+    <!-- TUTORIAL: 3. STYLING (WARNA, FONT, ANIMASI)                               -->
+    <!-- Ide: Memanggil framework Tailwind CSS dan membuat custom class agar       -->
+    <!-- web terlihat mewah, maskulin, dan mengkilap (glossy).                     -->
+    <!-- ========================================================================= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memanggil ikon dari FontAwesome (seperti logo WA, Instagram, dll) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Mengambil font modern & klasik dari Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+        
+        /* Pengaturan Dasar Web (Background Biru Gelap/Midnight) */
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0B1120;
+            overflow-x: hidden;
+            color: #E2E8F0;
+        }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* Warna Emas Maskulin (Gradasi Emas Terbakar/Bronze) */
+        .bg-glossy-gold {
+            background: linear-gradient(135deg, #A67C00 0%, #E6C27A 25%, #8B6508 50%, #E6C27A 75%, #664A00 100%);
+            background-size: 200% auto;
+        }
+        .text-glossy-gold {
+            background: linear-gradient(135deg, #D4AF37, #AA771C, #8B6508);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Efek Kaca Gelap (Glassmorphism) untuk Navbar dan Kotak Konten */
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Animasi Kilauan (Shine) saat tombol dilewati mouse */
+        @keyframes shine {
+            100% { transform: translateX(100%) skewX(-15deg); }
+        }
+        .hover-shine:hover .shine-effect {
+            animation: shine 0.8s ease-in-out forwards;
+        }
+
+        /* Bentuk Unik untuk Foto Profil (Melengkung di atas) */
+        .arch-shape {
+            border-radius: 200px 200px 20px 20px;
+        }
+
+        /* Motif Grid Khas Industrial/Arsitektur pada Latar Belakang */
+        .bg-industrial-grid {
+            background-size: 50px 50px;
+            background-image: 
+                linear-gradient(to right, rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#D4AF37] selection:text-[#0B1120] pb-20 relative bg-industrial-grid">
+
+    <!-- ========================================================================= -->
+    <!-- TUTORIAL: 4. ELEMEN DEKORASI BACKGROUND (SVG BLUEPRINT)                   -->
+    <!-- Ide: Garis-garis emas di pojok kanan atas dan kiri tengah untuk memberi   -->
+    <!-- kesan arsitektural/infrastruktur (khas pengadaan proyek/ATK).             -->
+    <!-- ========================================================================= -->
+    <svg class="absolute top-0 right-0 w-full lg:w-3/4 h-auto opacity-[0.15] pointer-events-none z-0 transform translate-x-10 -translate-y-10" viewBox="0 0 1000 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 200 -100 L 200 400 L 800 400" stroke="url(#goldGradient1)" stroke-width="2" stroke-dasharray="4 4"/>
+        <path d="M 200 400 L 500 700 L 1100 700" stroke="url(#goldGradient1)" stroke-width="1.5"/>
+        <path d="M 400 100 L 400 600" stroke="url(#goldGradient1)" stroke-width="1" stroke-dasharray="2 6"/>
+        <path d="M 600 -50 L 600 300 L 900 300" stroke="url(#goldGradient1)" stroke-width="1"/>
+        <circle cx="200" cy="400" r="6" stroke="#D4AF37" stroke-width="2"/>
+        <circle cx="500" cy="700" r="4" fill="#D4AF37"/>
+        <circle cx="600" cy="300" r="4" fill="#D4AF37"/>
+        <circle cx="400" cy="250" r="3" fill="#D4AF37"/>
+        <rect x="750" y="380" width="40" height="40" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+        <path d="M 750 380 L 790 420" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+        <defs>
+            <linearGradient id="goldGradient1" x1="0" y1="0" x2="1000" y2="800" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D4AF37"/><stop offset="0.5" stop-color="#8B6508"/><stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <svg class="absolute top-[40%] left-0 w-full lg:w-1/2 h-auto opacity-[0.1] pointer-events-none z-0" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M -100 200 L 300 200 L 500 400 L 900 400" stroke="url(#goldGradient2)" stroke-width="2" stroke-dasharray="4 4"/>
+        <path d="M 300 0 L 300 200" stroke="url(#goldGradient2)" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <circle cx="300" cy="200" r="5" stroke="#D4AF37" stroke-width="2"/>
+        <circle cx="500" cy="400" r="5" stroke="#D4AF37" stroke-width="2"/>
+        <defs>
+            <linearGradient id="goldGradient2" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8B6508"/><stop offset="0.5" stop-color="#D4AF37"/><stop offset="1" stop-color="#8B6508" stop-opacity="0"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- ========================================================================= -->
+    <!-- TUTORIAL: 5. NAVIGASI (MENU ATAS YANG MENGIKUTI SCROLL)                   -->
+    <!-- Ide: Memudahkan klien lompat ke bagian tertentu (Beranda, Portofolio, dll)-->
+    <!-- ========================================================================= -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-4 py-4 transition-all duration-300">
+        <div class="glass-panel text-gray-300 text-xs py-3 px-6 flex justify-between items-center max-w-6xl mx-auto rounded-full border border-white/10">
+            <!-- Logo Inisial -->
+            <a href="#beranda" class="font-serif font-bold text-2xl tracking-widest text-white hover:text-[#D4AF37] transition-colors">
+                HN<span class="text-[#D4AF37]">S</span>
+            </a>
+            <!-- Menu Teks (Hanya terlihat di Laptop/Desktop) -->
+            <div class="hidden md:flex items-center gap-8 font-medium tracking-wide">
+                <a href="#beranda" class="nav-item text-[#D4AF37] hover:text-[#D4AF37] transition-colors">Beranda</a>
+                <a href="#fokus" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">Fokus Kerja</a>
+                <a href="#portofolio" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">Portofolio</a>
+                <a href="#testimoni" class="nav-item text-gray-300 hover:text-[#D4AF37] transition-colors">Klien</a>
+            </div>
+            <!-- ID Karyawan & Tombol Menu HP -->
+            <div class="flex items-center gap-4">
+                <div class="hidden sm:flex items-center gap-2 font-semibold bg-slate-800/50 px-3 py-1.5 rounded-full border border-slate-700">
+                    <span class="text-green-500 flex items-center gap-1.5"><i class="fa-solid fa-circle text-[8px]"></i></span> 
+                    <!-- Ganti ID Karyawan di Sini -->
+                    <span class="text-white tracking-widest">ID: 0225 0201</span>
+                </div>
+                <button id="mobile-menu-btn" aria-label="Menu" class="md:hidden text-[#D4AF37] text-2xl focus:outline-none hover:text-white transition">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Dropdown (Khusus Tampilan HP) -->
+        <div id="mobile-menu" class="hidden md:hidden glass-panel mt-2 rounded-2xl border border-white/10 overflow-hidden flex-col max-w-6xl mx-auto shadow-2xl">
+            <a href="#beranda" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-[#D4AF37] font-medium tracking-wide">Beranda</a>
+            <a href="#fokus" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-gray-300 font-medium tracking-wide">Fokus Kerja</a>
+            <a href="#portofolio" class="mobile-nav-item px-6 py-4 text-center border-b border-slate-700/50 text-gray-300 font-medium tracking-wide">Portofolio</a>
+            <a href="#testimoni" class="mobile-nav-item px-6 py-4 text-center text-gray-300 font-medium tracking-wide">Klien & Testimoni</a>
+        </div>
+    </nav>
+
+    <!-- WRAPPER UTAMA KONTEN -->
+    <main class="max-w-7xl mx-auto px-4 pt-32 lg:pt-40 relative z-10">
+        
+        <!-- ========================================================================= -->
+        <!-- TUTORIAL: 6. HERO SECTION (BAGIAN SAMBUTAN UTAMA)                         -->
+        <!-- Ide: Menarik perhatian klien dalam 5 detik pertama dengan Foto besar,      -->
+        <!-- Headline menjanjikan, dan tombol Chat WhatsApp.                           -->
+        <!-- ========================================================================= -->
+        <section id="beranda" class="mb-16 relative scroll-mt-32">
+            <!-- Gambar overlay ruangan industrial samar-samar di background -->
+            <div class="absolute inset-0 z-0 opacity-[0.05] mix-blend-screen pointer-events-none rounded-3xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Industrial Interior" class="w-full h-full object-cover">
+            </div>
+
+            <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20">
+                <!-- Kiri: Area Teks -->
+                <div class="lg:w-1/2 text-center lg:text-left relative z-10">
+                    <div class="inline-flex items-center gap-3 mb-6 bg-slate-800/80 border border-slate-700 px-5 py-2 rounded-full shadow-lg backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-[#D4AF37] shadow-[0_0_8px_#D4AF37]"></span>
+                        <p class="text-gray-200 font-bold tracking-[0.2em] text-[10px] uppercase">Business Development Expert</p>
+                    </div>
+                    
+                    <!-- Ganti Nama Anda di sini -->
+                    <h1 class="text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-white mb-4 tracking-tight leading-tight">
+                        Hanifan N. <br class="hidden lg:block">Syafi’in
+                    </h1>
+                    
+                    <!-- Ganti Kalimat Jualan (Headline) di sini -->
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-medium text-gray-300 leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
+                        Hadirkan Standar Fasilitas <span class="text-glossy-gold font-serif italic font-bold">Premium</span> untuk Ekosistem Bisnis Anda.
+                    </h2>
+                    
+                    <p class="text-gray-400 leading-loose text-sm md:text-base mb-10 font-light max-w-xl mx-auto lg:mx-0 border-l-2 border-[#D4AF37]/50 pl-4">
+                        Dapatkan panduan pengadaan fasilitas terbaik yang tangguh, bersertifikasi SNI, dan didukung oleh rantai pasok nasional (137 Branch Office) ke seluruh wilayah Indonesia.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-5 justify-center lg:justify-start mb-10">
+                        <!-- GANTI NOMOR WA: Ubah "628XXXXXXXXXX" dengan nomor Anda. -->
+                        <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20Pak%20Hanifan,%20saya%20ingin%20konsultasi%20mengenai%20kebutuhan%20pengadaan%20fasilitas%20instansi%20saya." target="_blank" onclick="trackWhatsAppClick('Hero Section')" class="hover-shine relative w-full sm:w-auto bg-glossy-gold text-[#0B1120] px-8 py-5 rounded-full font-bold shadow-[0_20px_40px_rgba(212,175,55,0.15)] transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex items-center justify-center gap-3">
+                            <span class="shine-effect absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-15deg]"></span>
+                            <i class="fa-brands fa-whatsapp text-xl"></i> 
+                            <span class="tracking-wide uppercase text-sm">Konsultasi via WA</span>
+                        </a>
+                        
+                        <!-- Link Katalog -->
+                        <a href="https://atsonline.shop/#" target="_blank" class="group w-full sm:w-auto bg-slate-800/50 backdrop-blur-sm border border-slate-600 text-gray-300 hover:bg-slate-800 hover:border-[#D4AF37] hover:text-white px-8 py-5 rounded-full font-bold transition-all duration-300 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-book-open group-hover:scale-110 transition-transform"></i> <span class="tracking-wide uppercase text-sm">Katalog 2026</span>
+                        </a>
+                    </div>
+
+                    <!-- Poin Kredibilitas Angka (Track Record) -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 text-center lg:text-left border-t border-slate-800 pt-6">
+                        <div class="px-3">
+                            <!-- Edit Angka Tahun di sini -->
+                            <p class="text-[#D4AF37] font-bold text-xl md:text-2xl mb-1">2003</p>
+                            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Beroperasi Sejak</p>
+                        </div>
+                        <div class="px-3 border-l border-slate-800">
+                            <!-- Edit Angka Cabang di sini -->
+                            <p class="text-[#D4AF37] font-bold text-xl md:text-2xl mb-1">137</p>
+                            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Branch Office</p>
+                        </div>
+                        <div class="px-3 border-l border-slate-800">
+                            <p class="text-[#D4AF37] font-bold text-xl md:text-2xl mb-1"><i class="fa-solid fa-check-double text-lg"></i></p>
+                            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">SIPLah & E-Katalog</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kanan: Area Foto Profil -->
+                <div class="lg:w-1/2 relative flex justify-center lg:justify-end w-full">
+                    <div class="relative w-full max-w-[340px] md:max-w-[400px] aspect-[3/4]">
+                        <div class="absolute -inset-4 bg-transparent border-2 border-[#D4AF37]/30 arch-shape transform translate-x-4 translate-y-4"></div>
+                        <div class="absolute inset-0 bg-slate-900 p-2 arch-shape shadow-[0_30px_60px_rgba(0,0,0,0.8)] overflow-hidden z-10 border border-slate-700">
+                            <div class="w-full h-full arch-shape overflow-hidden relative bg-slate-800">
+                                
+                                <!-- GANTI FOTO DI SINI: -->
+                                <!-- Pastikan file Anda bernama 'profil.jpg' dan letakkan di folder yang sama dengan file index.html ini -->
+                                <!-- Jika foto gagal muat, ia akan otomatis memanggil foto pria berdasi dari Unsplash (onerror) -->
+                                <img src="./profil.jpg" alt="Hanifan N. Syafi'in" class="w-full h-full object-cover opacity-90 relative z-10 transition-transform duration-700 hover:scale-105" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';">
+                                
+                                <div class="absolute inset-0 bg-gradient-to-tr from-[#0B1120]/80 via-transparent to-white/5 pointer-events-none mix-blend-multiply z-20"></div>
+                            </div>
+                        </div>
+                        <!-- Badge melayang di bawah foto -->
+                        <div class="absolute -bottom-6 -left-8 bg-slate-900/95 backdrop-blur-md border border-slate-700 px-6 py-4 rounded-2xl shadow-2xl z-20">
+                            <p class="text-xs text-[#D4AF37] font-bold uppercase tracking-widest mb-1">Perusahaan</p>
+                            <!-- Ganti Nama Perusahaan di sini jika perlu -->
+                            <p class="text-sm font-serif font-bold text-white">PT Apsara Tiyasa Sambada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TUTORIAL: 7. BUKTI SOSIAL / MITRA (LOGO-LOGO KLIEN)                       -->
+        <!-- Ide: Meningkatkan kepercayaan instan dengan menyebutkan jenis klien besar.-->
+        <!-- ========================================================================= -->
+        <section class="py-10 border-b border-t border-slate-800 mb-20 relative z-10">
+            <p class="text-center text-[10px] text-gray-500 font-bold uppercase tracking-[0.3em] mb-8">Telah Dipercaya & Bermitra Dengan</p>
+            <!-- Ganti Ikon menggunakan FontAwesome (fa-solid fa-...) atau ganti dengan tag <img src="logo-klien.png"> -->
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex items-center gap-3 text-gray-400 hover:text-white transition">
+                    <i class="fa-solid fa-building-columns text-2xl md:text-3xl"></i>
+                    <span class="font-bold text-xs md:text-sm tracking-wide">Kementerian &<br>Instansi Daerah</span>
+                </div>
+                <div class="hidden md:block w-px h-8 bg-slate-800"></div>
+                <div class="flex items-center gap-3 text-gray-400 hover:text-white transition">
+                    <i class="fa-solid fa-school text-2xl md:text-3xl"></i>
+                    <span class="font-bold text-xs md:text-sm tracking-wide">Institusi Pendidikan<br>(SIPLah Partner)</span>
+                </div>
+                <div class="hidden md:block w-px h-8 bg-slate-800"></div>
+                <div class="flex items-center gap-3 text-gray-400 hover:text-white transition">
+                    <i class="fa-solid fa-city text-2xl md:text-3xl"></i>
+                    <span class="font-bold text-xs md:text-sm tracking-wide">BUMN & Swasta<br>Nasional</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TUTORIAL: 8. FOKUS KERJA (3 PILAR VALUE PROPOSITION)                      -->
+        <!-- Ide: Menjelaskan cara kerja Anda yang profesional (Analisis, Kurasi, Kawal)-->
+        <!-- ========================================================================= -->
+        <section id="fokus" class="mb-24 relative z-10 scroll-mt-24">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Fokus Kerja & Dedikasi</h3>
+                <div class="w-20 h-1 bg-glossy-gold mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-400 text-sm md:text-base font-light max-w-2xl mx-auto">Pendekatan taktis dan terstruktur yang menjadi jaminan efisiensi, keamanan, dan keberhasilan investasi pengadaan instansi Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Edit Teks Penjelasan Pilar 1 di sini -->
+                <div class="bg-slate-800/40 hover:bg-slate-800 backdrop-blur-xl border border-slate-700 hover:border-[#D4AF37]/50 rounded-[2rem] p-8 lg:p-10 text-center shadow-lg hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 group">
+                    <div class="w-20 h-20 mx-auto bg-slate-900 border border-slate-700 text-[#D4AF37] rounded-full flex items-center justify-center text-3xl mb-6 shadow-inner group-hover:scale-110 group-hover:border-[#D4AF37] transition-all duration-500">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h4 class="font-bold text-white text-xl mb-3 font-serif">Analisis Presisi</h4>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Menyelaraskan kebutuhan teknis dengan batas anggaran secara akurat untuk meminimalisir risiko <em>over-budgeting</em>.</p>
+                </div>
+
+                <!-- Pilar 2 (Bentuknya sedikit terangkat ke atas karena class -translate-y-8) -->
+                <div class="bg-slate-800/40 hover:bg-slate-800 backdrop-blur-xl border border-slate-700 hover:border-[#D4AF37]/50 rounded-[2rem] p-8 lg:p-10 text-center shadow-lg hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 group transform md:-translate-y-8">
+                    <div class="w-20 h-20 mx-auto bg-glossy-gold text-[#0B1120] rounded-full flex items-center justify-center text-3xl mb-6 shadow-[0_10px_20px_rgba(212,175,55,0.2)] group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h4 class="font-bold text-white text-xl mb-3 font-serif">Kurasi Premium</h4>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Merekomendasikan furnitur dan solusi edukasi berstandar SNI yang menjamin ketahanan dan estetika maskulin jangka panjang.</p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-slate-800/40 hover:bg-slate-800 backdrop-blur-xl border border-slate-700 hover:border-[#D4AF37]/50 rounded-[2rem] p-8 lg:p-10 text-center shadow-lg hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 group">
+                    <div class="w-20 h-20 mx-auto bg-slate-900 border border-slate-700 text-[#D4AF37] rounded-full flex items-center justify-center text-3xl mb-6 shadow-inner group-hover:scale-110 group-hover:border-[#D4AF37] transition-all duration-500">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <h4 class="font-bold text-white text-xl mb-3 font-serif">Kawal Tuntas</h4>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Mengawal seluruh proses administrasi dan logistik hingga barang tiba dengan aman ke lebih dari 100 jaringan kota.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TUTORIAL: 9. PORTOFOLIO BRAND (RIONE & GRAFIE)                            -->
+        <!-- Ide: Showcase produk jualan Anda. Link Instagram dan Linktree diedit di sini.-->
+        <!-- ========================================================================= -->
+        <section id="portofolio" class="mb-24 relative z-10 scroll-mt-24">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+                <div class="max-w-xl">
+                    <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Investasi pada Kualitas</h3>
+                    <p class="text-gray-400 text-sm md:text-base font-light">Kami mengkurasi brand tangguh dengan reputasi nasional untuk memastikan instansi Anda mendapatkan fasilitas kelas satu.</p>
+                </div>
+                <div class="hidden md:block">
+                    <span class="text-[#D4AF37] font-bold tracking-[0.2em] text-xs uppercase">Official Portfolio</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+                
+                <!-- Kotak RIONE -->
+                <div class="group bg-[#111827] rounded-[2.5rem] p-10 transition-all duration-500 shadow-xl border border-slate-800 hover:border-[#D4AF37]/50 flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-transparent to-[#D4AF37]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                    <h4 class="text-5xl font-serif font-bold text-white mb-3 tracking-tight group-hover:text-glossy-gold transition-all">RIONE</h4>
+                    <p class="text-xs text-[#D4AF37] font-bold tracking-[0.2em] uppercase mb-6">Premium Office Furniture</p>
+                    <p class="text-sm text-gray-400 font-light mb-10 leading-relaxed flex-grow">
+                        Ciptakan ruang kerja dan area publik yang representatif, tangguh, dan meningkatkan produktivitas tim Anda. Dirancang khusus untuk lobi, ruang direksi, dan auditorium modern.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                        <!-- Edit Linktree RIONE di href ini -->
+                        <a href="https://linktr.ee/rione" target="_blank" class="flex-1 bg-slate-800 border border-slate-700 text-white px-6 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition hover:bg-[#D4AF37] hover:text-[#0B1120] hover:border-[#D4AF37] flex justify-center items-center gap-2">
+                            Lihat Koleksi
+                        </a>
+                        <!-- Edit Instagram RIONE di href ini -->
+                        <a href="https://www.instagram.com/rione.id/" target="_blank" class="w-full sm:w-auto bg-slate-900 text-gray-400 hover:text-[#D4AF37] px-6 py-4 rounded-full text-xs font-bold transition flex justify-center items-center gap-2 border border-slate-800 hover:border-[#D4AF37]/50">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Kotak GRAFIE -->
+                <div class="group bg-[#111827] rounded-[2.5rem] p-10 transition-all duration-500 shadow-xl border border-slate-800 hover:border-[#D4AF37]/50 flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-transparent to-[#D4AF37]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                    <h4 class="text-5xl font-serif font-bold text-white mb-3 tracking-tight group-hover:text-glossy-gold transition-all">Grafie</h4>
+                    <p class="text-xs text-[#D4AF37] font-bold tracking-[0.2em] uppercase mb-6">Solusi Sarana Edukasi</p>
+                    <p class="text-sm text-gray-400 font-light mb-10 leading-relaxed flex-grow">
+                        Perlengkapan edukasi dengan garansi ketahanan tinggi, material kokoh, dan bersertifikat SNI. Solusi cerdas untuk sekolah, universitas, dan instansi pendidikan masa depan.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                        <!-- Edit Linktree Grafie di href ini -->
+                        <a href="https://linktr.ee/grafie" target="_blank" class="flex-1 bg-slate-800 border border-slate-700 text-white px-6 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition hover:bg-[#D4AF37] hover:text-[#0B1120] hover:border-[#D4AF37] flex justify-center items-center gap-2">
+                            Lihat Koleksi
+                        </a>
+                        <!-- Edit Instagram Grafie di href ini -->
+                        <a href="https://www.instagram.com/grafie_indonesia/" target="_blank" class="w-full sm:w-auto bg-slate-900 text-gray-400 hover:text-[#D4AF37] px-6 py-4 rounded-full text-xs font-bold transition flex justify-center items-center gap-2 border border-slate-800 hover:border-[#D4AF37]/50">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Link ke Induk Perusahaan -->
+            <a href="https://apsaratiyasasambada.com/" target="_blank" class="group block max-w-4xl mx-auto">
+                <div class="bg-slate-900/50 border border-slate-800 hover:border-[#D4AF37] rounded-[2rem] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-500 hover:bg-slate-800 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] relative overflow-hidden">
+                    <div class="text-center md:text-left relative z-10">
+                        <p class="text-[10px] text-gray-500 font-bold tracking-[0.2em] uppercase mb-2">Didukung Penuh Oleh Induk Perusahaan</p>
+                        <h4 class="text-2xl font-serif font-bold text-white group-hover:text-glossy-gold transition-colors">PT. Apsara Tiyasa Sambada</h4>
+                    </div>
+                    <div class="w-14 h-14 rounded-full border border-slate-700 flex items-center justify-center text-gray-400 group-hover:bg-[#D4AF37] group-hover:text-[#0B1120] group-hover:border-[#D4AF37] transition-all duration-300 relative z-10">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TUTORIAL: 10. TESTIMONI (BUKTI KEPUASAN KLIEN)                            -->
+        <!-- Ide: Teks review untuk meyakinkan calon pembeli yang masih ragu.          -->
+        <!-- ========================================================================= -->
+        <section id="testimoni" class="py-20 relative z-10 scroll-mt-24 border-t border-slate-800">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Pengalaman Klien Kami</h3>
+                <div class="w-20 h-1 bg-glossy-gold mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-400 text-sm md:text-base font-light max-w-2xl mx-auto">Reputasi kami dibangun dari kepercayaan institusi dan perusahaan yang telah merasakan langsung ketangguhan fasilitas serta layanan kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Ubah teks Testimoni 1 di Sini -->
+                <div class="bg-[#111827] border border-slate-800 p-8 md:p-10 rounded-[2.5rem] relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-[#D4AF37] opacity-20 absolute top-8 left-8"></i>
+                    <div class="relative z-10">
+                        <p class="text-gray-300 font-light leading-relaxed mb-8 italic">
+                            "Pengadaan mebelair untuk rehabilitasi ruang lab sekolah kami berjalan sangat baik dan sesuai regulasi. Kualitas meja dan kursi edukasi dari lini <strong>Grafie</strong> sangat kokoh, sesuai spesifikasi teknis dan SNI. Komunikasi dengan tim Bapak Hanifan serta proses pengiriman ke daerah kami juga terpantau tepat waktu."
+                        </p>
+                        <div class="flex items-center gap-4 border-t border-slate-800 pt-6">
+                            <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-gray-400">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold">Pejabat Pembuat Komitmen (PPK)</h5>
+                                <p class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest mt-1">Dinas Pendidikan (Via SIPLah)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ubah teks Testimoni 2 di Sini -->
+                <div class="bg-[#111827] border border-slate-800 p-8 md:p-10 rounded-[2.5rem] relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-[#D4AF37] opacity-20 absolute top-8 left-8"></i>
+                    <div class="relative z-10">
+                        <p class="text-gray-300 font-light leading-relaxed mb-8 italic">
+                            "Transformasi ruang direksi dan lobi kantor cabang baru kami menjadi jauh lebih elegan berkat lini furnitur <strong>RIONE</strong>. Tim Pak Hanifan memberikan solusi pengadaan yang sangat transparan dan pas dengan anggaran perusahaan kami, tanpa perlu mengorbankan estetika dan kualitas bahan."
+                        </p>
+                        <div class="flex items-center gap-4 border-t border-slate-800 pt-6">
+                            <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-gray-400">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold">General Manager Pengadaan</h5>
+                                <p class="text-[#D4AF37] text-xs font-bold uppercase tracking-widest mt-1">Perusahaan Swasta Nasional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TUTORIAL: 11. CALL TO ACTION (DORONGAN AKHIR UNTUK CHAT)                  -->
+        <!-- Ide: Bagian besar berwarna hitam legam untuk memancing klien klik WA.     -->
+        <!-- ========================================================================= -->
+        <section id="kontak" class="py-20 relative z-10 scroll-mt-24">
+            <div class="bg-black border border-slate-800 rounded-[3rem] p-10 md:p-20 text-center shadow-2xl relative overflow-hidden group">
+                <svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none transition-transform duration-1000 group-hover:scale-105" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <path d="M-100 250 C 300 0, 700 500, 1100 250" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                </svg>
+                
+                <div class="relative z-10 max-w-2xl mx-auto">
+                    <h3 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Siap Menjadi Mitra Kami Selanjutnya?</h3>
+                    <p class="text-sm md:text-base font-light text-gray-400 mb-12 leading-relaxed">
+                        Jadwalkan <strong>"Clarity Session 15 Menit"</strong> bersama saya. Kita akan bedah opsi terbaik yang sesuai dengan spesifikasi dan anggaran instansi Anda—gratis tanpa kewajiban pembelian.
+                    </p>
+                    
+                    <div class="flex justify-center">
+                        <!-- GANTI NOMOR WA LAGI DI SINI -->
+                        <a href="https://wa.me/628XXXXXXXXXX?text=Halo%20Pak%20Hanifan,%20saya%20tertarik%20untuk%20menjadwalkan%20Clarity%20Session%2015%20Menit%20terkait%20pengadaan%20fasilitas." target="_blank" onclick="trackWhatsAppClick('Footer CTA')" class="hover-shine relative overflow-hidden bg-glossy-gold text-[#0B1120] px-10 py-5 rounded-full font-bold shadow-[0_10px_30px_rgba(212,175,55,0.15)] transition transform hover:-translate-y-1 flex items-center gap-3">
+                            <span class="shine-effect absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/50 to-transparent skew-x-[-15deg]"></span>
+                            <i class="fa-brands fa-whatsapp text-xl"></i> <span class="relative z-10 tracking-wide uppercase text-sm">Chat WhatsApp Sekarang</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TUTORIAL: 12. FOOTER (INFORMASI KONTAK & LEGAL)                           -->
+        <!-- Ide: Alamat kantor, nomor telepon, dan tautan kebijakan privasi.          -->
+        <!-- ========================================================================= -->
+        <footer class="pt-10 pb-4 relative z-10">
+            <div class="bg-[#111827] rounded-[2.5rem] p-10 md:p-14 shadow-2xl border border-slate-800">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-10 border-b border-slate-800 pb-10 mb-10">
+                    <div class="text-center lg:text-left">
+                        <h4 class="font-serif font-bold text-white text-2xl mb-1">PT Apsara Tiyasa Sambada</h4>
+                        <p class="text-[#D4AF37] font-bold text-[10px] tracking-[0.2em] uppercase">Official B2B Distributor</p>
+                    </div>
+                    <!-- Link Katalog Bawah -->
+                    <a href="https://atsonline.shop/#" target="_blank" class="group bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-[#D4AF37] px-8 py-4 rounded-full flex items-center gap-4 transition-all duration-300 shadow-lg">
+                        <div class="text-right">
+                            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Jangkauan Kami</p>
+                            <p class="text-sm text-gray-200 font-bold">Katalog Resmi 2026</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-[#D4AF37] group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400 text-sm font-light">
+                    <!-- Edit Alamat di sini -->
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot text-[#D4AF37]"></i>
+                        <p>Jl. Klaten - Solo Km 7, Dlimas, Ceper, Klaten 57465</p>
+                    </div>
+                    <div class="flex gap-8">
+                        <!-- Edit Telp & Fax di sini -->
+                        <div class="flex items-center gap-2 hover:text-[#D4AF37] transition">
+                            <i class="fa-solid fa-phone text-[#D4AF37]"></i>
+                            <span>(0272) 322 446</span>
+                        </div>
+                        <div class="flex items-center gap-2 hover:text-[#D4AF37] transition">
+                            <i class="fa-solid fa-fax text-[#D4AF37]"></i>
+                            <span>(0272) 323 626</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 flex flex-col md:flex-row justify-between items-center px-4 md:px-10 gap-4">
+                <p class="text-center md:text-left text-[10px] text-gray-500 font-medium tracking-widest uppercase">&copy; 2026 Hanifan N. Syafi'in. All rights reserved.</p>
+                <div class="flex gap-6 text-[11px] text-gray-500 font-medium">
+                    <!-- Tautan ini bisa diisi dengan link dokumen PDF / halaman legal Anda nantinya -->
+                    <a href="#" class="hover:text-[#D4AF37] transition-colors">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-[#D4AF37] transition-colors">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- TUTORIAL: 13. JAVASCRIPT (LOGIKA INTERAKTIF)                              -->
+    <!-- Ide: Menjalankan menu HP, Scrollspy, dan pelacak klik analitik WA.        -->
+    <!-- ========================================================================= -->
+    <script>
+        // FUNGSI 1: Membuka dan menutup Menu di HP (Mobile Menu Toggle)
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-item');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+
+        // FUNGSI 2: Scrollspy (Mengubah warna Menu Atas menjadi emas saat di-scroll ke bagiannya)
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav-item');
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id'); // Mendeteksi section mana yang sedang dilihat
+                }
+            });
+
+            // Mengubah warna menu di desktop
+            navItems.forEach(item => {
+                item.classList.remove('text-[#D4AF37]');
+                item.classList.add('text-gray-300');
+                if (item.getAttribute('href').substring(1) === current) {
+                    item.classList.remove('text-gray-300');
+                    item.classList.add('text-[#D4AF37]'); // Beri warna emas
+                }
+            });
+
+            // Mengubah warna menu di HP
+            mobileNavItems.forEach(item => {
+                item.classList.remove('text-[#D4AF37]');
+                item.classList.add('text-gray-300');
+                if (item.getAttribute('href').substring(1) === current) {
+                    item.classList.remove('text-gray-300');
+                    item.classList.add('text-[#D4AF37]');
+                }
+            });
+        });
+
+        // FUNGSI 3: Mengirim data ke Google Analytics jika tombol WA diklik
+        function trackWhatsAppClick(location) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'click', {
+                    'event_category': 'Contact',
+                    'event_label': 'WhatsApp - ' + location,
+                    'value': 1
+                });
+            }
+            // Mengirim data ke Facebook/Meta Pixel jika dipasang
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'WhatsAppClick', { location: location });
+            }
+            console.log('Event Tracked: WhatsApp Clicked from ' + location);
+        }
+    </script>
+</body>
+</html>
